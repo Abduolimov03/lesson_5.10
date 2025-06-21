@@ -98,3 +98,49 @@ from colorsys import yiq_to_rgb
 # parol = parol_rakamlar[:8]
 #
 # print("Yaratilgan parol:", parol)
+
+
+
+
+
+# ###
+# def prefix_sum_decorator(func):
+#     def wrapper(*args, **kwargs):
+#         a = func(*args, **kwargs)
+#         b = []
+#         current_sum = 0
+#         for i in a:
+#             current_sum += i
+#             b.append(current_sum)
+#         return b
+#     return wrapper
+#
+# @prefix_sum_decorator
+# def get_array():
+#     return [1, 2, 3, 4]
+#
+# print(get_array())  # [1, 3, 6, 10]
+#
+#
+# ###
+# from collections import namedtuple
+#
+# Car = namedtuple('Car', ['brand', 'model', 'year', 'mileage'])
+#
+# cars = []
+#
+# for i in range(5):
+#     print(f"{i+1}-mashina:")
+#     brand = input("Brand: ")
+#     model = input("Model: ")
+#     year = int(input("Yil: "))
+#     mileage = int(input("Yurgan masofa (km): "))
+#     cars.append(Car(brand, model, year, mileage))
+#     print()
+#
+# # Eng kam yurgan mashinani topish
+# min_car = min(cars, key=lambda car: car.mileage)
+#
+# print("\nEng kam yurgan mashina:")
+# print(f"{min_car.brand} {min_car.model}, {min_car.year}-yil, {min_car.mileage} km yurgan.")
+#
